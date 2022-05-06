@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora de Gastos Mensuales</title>
+</head>
+<body>
+    <section class="bigContainer">
+        <section class="box">
+            <section class="box__container">
+                <h1>Calculadora de Gastos Mensuales</h1>
+                <form class="box__container--form">
+                    <h4>Introduce el monto en cada item según corresponda y el ingreso de la pareja</h4>
+                    <input class="input" id="rent" type="number" placeholder="Introduce monto del alquiler" required>
+                    <input class="input" id="food_1" type="number" placeholder="Introduce monto del mercado #1" required>
+                    <input class="input" id="food_2" type="number" placeholder="Introduce monto del mercado #2" required>
+                    <input class="input" id="food_3" type="number" placeholder="Introduce monto de la proteína" required>
+                    <input class="input" id="electricityService" type="number" placeholder="Introduce monto de la luz" required>
+                    <input class="input" id="waterService" type="number" placeholder="Introduce monto del agua" required>
+                    <input class="input" id="drinkingWater" type="number" placeholder="Introduce monto del agua potable" required>
+                    <input class="input" id="internet" type="number" placeholder="Introduce monto del internet" required>
+                    <input class="input" id="other" type="number" placeholder="Introduce monto en otros gastos">
+
+                    <h4>Introduce ingresos y pagos realizados</h4>
+
+                    <input class="input" id="income1" type="number" placeholder="Introduce el ingreso persona 1" required>
+                    <input class="input" id="income2" type="number" placeholder="Introduce el ingreso persona 2">
+
+                    <input class="input" id="income1Pay" type="number" placeholder="Introduce pagos realizados persona 1" required>
+                    <input class="input" id="income2Pay" type="number" placeholder="Introduce pagos realizados persona 2">
+                </form>
+                <button class="button" id="calculate">Calcular</button>
+                <p id="final"></p>
+            </section>
+
+        </section>
+
+    <footer class="footer">
+        <a href="https://github.com/pmazzey31" target="_blank"><img src="./ASSETS/github.png" alt="Logo GitHub" ></a>
+        <p><a href="https://github.com/pmazzey31" target="_blank">GitHub: @pmazzey31</a></p>
+    </footer>
+
+    <script src= 'index.js'></script>
+</body>
+</html>
