@@ -64,9 +64,19 @@ function calculateAmounts(){
     var income2Pay = document.getElementById("income2Pay");
     income2PayAmount = parseFloat(income2Pay.value);
 
-    var totalIncome1pay = (finalTotalIncome1 - income1PayAmount).toFixed(2);
+    if(income1PayAmount){
+        var totalIncome1pay = (finalTotalIncome1 - income1PayAmount).toFixed(2);
+    } else{
+        income1PayAmount = 0;
+        var totalIncome1pay = (finalTotalIncome1 - income1PayAmount).toFixed(2);
+    }
 
-    var totalIncome2pay = (finalTotalIncome2 - income2PayAmount).toFixed(2);
+    if(income2PayAmount){
+        var totalIncome2pay = (finalTotalIncome2 - income2PayAmount).toFixed(2);
+    } else {
+        income2PayAmount = 0;
+        var totalIncome2pay = (finalTotalIncome2 - income2PayAmount).toFixed(2);
+    }
 
 
     //calculateAmounts
